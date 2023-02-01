@@ -1,0 +1,22 @@
+<ion-content padding style="--background: rgb(255, 255, 255);">
+
+
+  <br><br>
+
+
+  <ion-button (click)="downloadApp()">
+    Download File
+  </ion-button>
+  <br><br>
+  <ion-progress-bar *ngIf="progressBar" color="success" [style.width]="progress + '%'" value="{{ progress }}">
+  </ion-progress-bar>
+  <span *ngIf="progressBar" style="text-align: center;">{{ progress }}%</span>
+  <br><br>
+
+  <div class="progress-outer" *ngIf="progressBar"  >
+    <div class="progress-inner" [style.width]="progress + '%'">
+      {{ progress }}%
+    </div>
+  </div>
+
+</ion-content>
