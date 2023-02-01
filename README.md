@@ -5,6 +5,7 @@ How to download file in ionic 6
     A. ionic cordova plugin add cordova-plugin-file-transfer
     B. npm install --save @ionic-native/file-transfer
 #2: Import file and filetransfer plugin in app.Module.ts file.
+
     import { File } from '@ionic-native/file/ngx';
     import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer/ngx';
     
@@ -13,12 +14,15 @@ How to download file in ionic 6
     FileTransfer,
     ]
  #3: import in your component also.
+ 
      A. import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer/ngx';
      B. import { ToastController } from '@ionic/angular';
      C. import { Component, NgZone, OnInit } from '@angular/core';
      
 #5: then build your app using this cmd.
+
     ionic cordova build android
+    
  #6 If you got Error whitelist plugin in filetransfer.java file change these lines Whitelist to AllowList.
  
       // replace
