@@ -38,8 +38,10 @@ How to download file in ionic 6
 
     AllowList whitelist = (AllowList)gwl.invoke(webView);
     shouldAllowRequest = whitelist.isUrlAllowListed(source); 
+    
 #7: and then Remove plateform and then add.
     then it's work fine 
 #8: then build your app using this cmd.
+
     ionic cordova build android
 
