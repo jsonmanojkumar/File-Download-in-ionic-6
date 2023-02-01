@@ -2,8 +2,10 @@
 How to download file in ionic 6
 
 #1: Install Plugin
+
     A. ionic cordova plugin add cordova-plugin-file-transfer
     B. npm install --save @ionic-native/file-transfer
+    
 #2: Import file and filetransfer plugin in app.Module.ts file.
 
     import { File } from '@ionic-native/file/ngx';
